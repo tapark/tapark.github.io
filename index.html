@@ -1,6 +1,96 @@
-this is first step to my project
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Teddy Park – Android App Developer</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      padding: 40px;
+      line-height: 1.6;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+    .intro {
+      margin-bottom: 40px;
+    }
+    .app-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .app-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+    }
+    .app-card img {
+      width: 96px;
+      height: 96px;
+      border-radius: 16px;
+      margin-bottom: 12px;
+    }
+    .app-card h3 {
+      margin: 0;
+      font-size: 1.1em;
+    }
+    .app-card p {
+      font-size: 0.95em;
+      color: #666;
+    }
+    .app-card a {
+      display: inline-block;
+      margin-top: 10px;
+      text-decoration: none;
+      color: #007bff;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Teddy Park</h1>
+  <div class="intro">
+    <p>
+      다양한 실용 앱을 통해 당신의 일상을 더욱 편리하게.  
+      때로는 뜻밖의 행운도 함께 드릴 수 있기를 바랍니다.
+    </p>
+  </div>
 
-https://play.google.com/store/apps/details?id=com.teddy_park.today_lottery
-https://play.google.com/store/apps/details?id=com.project_100.haptic_lab
-https://play.google.com/store/apps/details?id=com.tapark.easy_image_editor
-https://play.google.com/store/apps/details?id=com.teddypark.dice_for_board_game
+  <div class="app-list">
+    <div class="app-card">
+      <img src="https://via.placeholder.com/96" alt="Today Lottery Icon">
+      <h3>Today Lottery</h3>
+      <p>로또 번호 확인 + 추천, 당첨 제외 필터 기능 포함.</p>
+      <a href="https://play.google.com/store/apps/details?id=com.teddy_park.today_lottery" target="_blank">앱 보기</a>
+    </div>
+
+    <div class="app-card">
+      <img src="https://via.placeholder.com/96" alt="Haptic Lab Icon">
+      <h3>Haptic Lab</h3>
+      <p>기기 진동 테스트 및 설정 실험실.</p>
+      <a href="https://play.google.com/store/apps/details?id=com.project_100.haptic_lab" target="_blank">앱 보기</a>
+    </div>
+
+    <div class="app-card">
+      <img src="https://via.placeholder.com/96" alt="Easy Image Editor Icon">
+      <h3>Easy Image Editor</h3>
+      <p>간단한 편집 기능이 포함된 이미지 편집 앱.</p>
+      <a href="https://play.google.com/store/apps/details?id=com.tapark.easy_image_editor" target="_blank">앱 보기</a>
+    </div>
+
+    <div class="app-card">
+      <img src="https://via.placeholder.com/96" alt="Dice for Board Game Icon">
+      <h3>Dice for Board Game</h3>
+      <p>주사위가 필요한 모든 상황을 위한 심플한 도구.</p>
+      <a href="https://play.google.com/store/apps/details?id=com.teddypark.dice_for_board_game" target="_blank">앱 보기</a>
+    </div>
+  </div>
+</body>
+</html>
