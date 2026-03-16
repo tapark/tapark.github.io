@@ -6,138 +6,159 @@
   <title>Teddy Park – Android App Developer</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f9f9f9;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f7f6;
       color: #333;
       padding: 40px;
       line-height: 1.6;
+      margin: 0;
     }
     h1 {
-      font-size: 2em;
+      font-size: 2.2em;
       margin-bottom: 10px;
+      color: #2d3436;
     }
     .intro {
       margin-bottom: 40px;
+      color: #636e72;
     }
     .app-list {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
+      gap: 25px;
     }
     .app-card {
       background: white;
-      border-radius: 12px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      padding: 25px;
       text-align: center;
+      transition: transform 0.2s;
+    }
+    .app-card:hover {
+      transform: translateY(-5px);
     }
     .app-card img {
       width: 96px;
       height: 96px;
-      border-radius: 16px;
-      margin-bottom: 12px;
+      border-radius: 20px;
+      margin-bottom: 15px;
     }
     .app-card h3 {
-      margin: 0;
-      font-size: 1.1em;
+      margin: 10px 0 5px 0;
+      font-size: 1.2em;
     }
     .app-card p {
-      font-size: 0.95em;
-      color: #666;
+      font-size: 0.9em;
+      color: #636e72;
+      height: 40px;
     }
     .app-card a {
       display: inline-block;
-      margin-top: 10px;
+      margin-top: 15px;
       text-decoration: none;
-      color: #007bff;
+      color: #0984e3;
       font-weight: bold;
     }
 
-    /* 테스트 버튼 스타일 */
-    .test-section {
+    /* 테스트 섹션 스타일 */
+    .test-container {
       margin-top: 60px;
-      padding: 30px;
-      border-top: 2px dashed #ddd;
+      padding: 40px 20px;
+      background-color: #dfe6e9;
+      border-radius: 20px;
       text-align: center;
-      background-color: #fff;
-      border-radius: 12px;
+      border: 2px dashed #b2bec3;
     }
-    .test-title {
-      font-weight: bold;
-      color: #ff4757;
-      margin-bottom: 15px;
+    .test-label {
       display: block;
-    }
-    .btn-return {
-      display: inline-block;
-      background-color: #2f3542;
-      color: white !important;
-      padding: 15px 35px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-size: 1.1em;
+      color: #d63031;
       font-weight: bold;
-      transition: background 0.3s;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      margin-bottom: 20px;
+      font-size: 1.1em;
     }
-    .btn-return:hover {
-      background-color: #57606f;
+    .btn-intent {
+      display: inline-block;
+      background-color: #2d3436;
+      color: #ffffff !important;
+      padding: 18px 40px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-size: 1.2em;
+      font-weight: bold;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
     }
-    .test-desc {
+    .btn-intent:active {
+      transform: scale(0.95);
+      background-color: #000;
+    }
+    .test-info {
+      margin-top: 20px;
       font-size: 0.85em;
-      color: #888;
-      margin-top: 15px;
-      line-height: 1.5;
+      color: #636e72;
+      line-height: 1.7;
+    }
+    .code-span {
+      background: #f1f2f6;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+      color: #e84393;
     }
   </style>
 </head>
 <body>
+
   <h1>Teddy Park</h1>
   <div class="intro">
     <p>
-      다양한 실용 앱을 통해 당신의 일상을 더욱 편리하게.  
+      다양한 실용 앱을 통해 당신의 일상을 더욱 편리하게.<br>
       때로는 뜻밖의 행운도 함께 드릴 수 있기를 바랍니다.
     </p>
   </div>
 
   <div class="app-list">
     <div class="app-card">
-      <img src="https://via.placeholder.com/96" alt="Today Lottery Icon">
+      <img src="https://via.placeholder.com/96/0984e3/ffffff?text=Lotto" alt="Today Lottery Icon">
       <h3>Today Lottery</h3>
       <p>로또 번호 확인 + 추천, 당첨 제외 필터 기능 포함.</p>
-      <a href="https://play.google.com/store/apps/details?id=com.teddy_park.today_lottery" target="_blank">앱 보기</a>
+      <a href="https://play.google.com/store/apps/details?id=com.teddy_park.today_lottery" target="_blank">Google Play</a>
     </div>
 
     <div class="app-card">
-      <img src="https://via.placeholder.com/96" alt="Haptic Lab Icon">
+      <img src="https://via.placeholder.com/96/6c5ce7/ffffff?text=Vibe" alt="Haptic Lab Icon">
       <h3>Haptic Lab</h3>
       <p>기기 진동 테스트 및 설정 실험실.</p>
-      <a href="https://play.google.com/store/apps/details?id=com.project_100.haptic_lab" target="_blank">앱 보기</a>
+      <a href="https://play.google.com/store/apps/details?id=com.project_100.haptic_lab" target="_blank">Google Play</a>
     </div>
 
     <div class="app-card">
-      <img src="https://via.placeholder.com/96" alt="Easy Image Editor Icon">
+      <img src="https://via.placeholder.com/96/00b894/ffffff?text=Edit" alt="Easy Image Editor Icon">
       <h3>Easy Image Editor</h3>
       <p>간단한 편집 기능이 포함된 이미지 편집 앱.</p>
-      <a href="https://play.google.com/store/apps/details?id=com.tapark.easy_image_editor" target="_blank">앱 보기</a>
+      <a href="https://play.google.com/store/apps/details?id=com.tapark.easy_image_editor" target="_blank">Google Play</a>
     </div>
 
     <div class="app-card">
-      <img src="https://via.placeholder.com/96" alt="Dice for Board Game Icon">
+      <img src="https://via.placeholder.com/96/fdb827/ffffff?text=Dice" alt="Dice for Board Game Icon">
       <h3>Dice for Board Game</h3>
       <p>주사위가 필요한 모든 상황을 위한 심플한 도구.</p>
-      <a href="https://play.google.com/store/apps/details?id=com.teddypark.dice_for_board_game" target="_blank">앱 보기</a>
+      <a href="https://play.google.com/store/apps/details?id=com.teddypark.dice_for_board_game" target="_blank">Google Play</a>
     </div>
   </div>
 
-  <div class="test-section">
-    <span class="test-title">[개발자 전용 테스트]</span>
-    <a href="moneypignaivy://naivy" class="btn-return">
-       앱으로 복귀하기 (Deep Link)
+  <div class="test-container">
+    <span class="test-label">🚨 WebView 복귀 테스트 (Android 전용)</span>
+    
+    <a href="intent://naivy#Intent;scheme=moneypig_naivy;package=kr.bitbyte.moneypig;end" class="btn-intent">
+       앱으로 복귀하기
     </a>
-    <div class="test-desc">
-      이 버튼은 <b>moneypig_naivy://naivy</b> 주소를 호출합니다.<br>
-      WebViewActivity가 열려있는 상태에서 복귀 시 재실행 여부를 확인하세요.
+
+    <div class="test-info">
+      이 버튼은 <span class="code-span">Intent 스킴</span>을 사용하여 404 에러를 방지합니다.<br>
+      매니페스트에 등록된 <span class="code-span">moneypig_naivy://naivy</span>를 직접 호출하며,<br>
+      <span class="code-span">singleTop</span> 설정 시 열려있던 WebViewActivity가 그대로 유지됩니다.
     </div>
   </div>
 
