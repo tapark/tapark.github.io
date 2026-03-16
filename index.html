@@ -52,6 +52,43 @@
       color: #007bff;
       font-weight: bold;
     }
+
+    /* 테스트 버튼 스타일 */
+    .test-section {
+      margin-top: 60px;
+      padding: 30px;
+      border-top: 2px dashed #ddd;
+      text-align: center;
+      background-color: #fff;
+      border-radius: 12px;
+    }
+    .test-title {
+      font-weight: bold;
+      color: #ff4757;
+      margin-bottom: 15px;
+      display: block;
+    }
+    .btn-return {
+      display: inline-block;
+      background-color: #2f3542;
+      color: white !important;
+      padding: 15px 35px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1.1em;
+      font-weight: bold;
+      transition: background 0.3s;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+    .btn-return:hover {
+      background-color: #57606f;
+    }
+    .test-desc {
+      font-size: 0.85em;
+      color: #888;
+      margin-top: 15px;
+      line-height: 1.5;
+    }
   </style>
 </head>
 <body>
@@ -92,5 +129,17 @@
       <a href="https://play.google.com/store/apps/details?id=com.teddypark.dice_for_board_game" target="_blank">앱 보기</a>
     </div>
   </div>
+
+  <div class="test-section">
+    <span class="test-title">[개발자 전용 테스트]</span>
+    <a href="moneypig_naivy://naivy" class="btn-return">
+       앱으로 복귀하기 (Deep Link)
+    </a>
+    <div class="test-desc">
+      이 버튼은 <b>moneypig_naivy://naivy</b> 주소를 호출합니다.<br>
+      WebViewActivity가 열려있는 상태에서 복귀 시 재실행 여부를 확인하세요.
+    </div>
+  </div>
+
 </body>
 </html>
