@@ -149,17 +149,16 @@
   </div>
 
   <div class="test-container">
-    <span class="test-label">🚨 WebView 복귀 테스트 (Android 전용)</span>
+    <span class="test-label">🚨 WebView 복귀 테스트 (Airbridge 링크)</span>
     
-    <!-- Intent 스킴 호출 방식 -->
-    <a href="intent://game_mission/adjoe#Intent;scheme=moneypig;end" class="btn-intent">
+    <!-- 에어브릿지 링크 호출 방식 -->
+    <a href="https://moneypig.airbridge.io/game_misison/adjoe" class="btn-intent">
        앱으로 복귀하기
     </a>
 
     <div class="test-info">
-      이 버튼은 <span class="code-span">Intent 스킴</span>을 사용하여 404 에러를 방지합니다.<br>
-      매니페스트에 등록된 <span class="code-span">moneypig://game_mission/adjoe</span>를 분석하여 호출하며,<br>
-      <span class="code-span">singleTop</span> 설정 시 열려있던 WebViewActivity가 그대로 유지됩니다.
+      이 버튼은 에어브릿지 매칭링크(<span class="code-span">HTTPS 스킴</span>)를 호출합니다.<br>
+      기기에 앱이 있으면 앱 링크(App Links)를 통해 바로 앱이 열리고, 없으면 지정된 웹 스토어로 이동합니다.
     </div>
   </div>
 
