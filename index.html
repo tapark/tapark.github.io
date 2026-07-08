@@ -151,16 +151,14 @@
   <div class="test-container">
     <span class="test-label">🚨 WebView 복귀 테스트 (Android 전용)</span>
     
-    <a href="intent://naivy#Intent;scheme=moneypig_naivy;package=kr.bitbyte.moneypig;end" class="btn-intent">
+    <!-- Intent 스킴 호출 방식 -->
+    <a href="intent://game_mission/adjoe#Intent;scheme=moneypig;package=kr.bitbyte.moneypig;end" class="btn-intent">
        앱으로 복귀하기
     </a>
-    <!-- <a href="moneypig_naivy://naivy" class="btn-return">
-       앱으로 복귀하기 (Deep Link)
-    </a> -->
 
     <div class="test-info">
       이 버튼은 <span class="code-span">Intent 스킴</span>을 사용하여 404 에러를 방지합니다.<br>
-      매니페스트에 등록된 <span class="code-span">moneypig_naivy://naivy</span>를 직접 호출하며,<br>
+      매니페스트에 등록된 <span class="code-span">moneypig://game_mission/adjoe</span>를 분석하여 호출하며,<br>
       <span class="code-span">singleTop</span> 설정 시 열려있던 WebViewActivity가 그대로 유지됩니다.
     </div>
   </div>
