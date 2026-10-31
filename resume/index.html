@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="박태규 Android Developer 이력서. 100만 다운로드 Android 앱 운영, 오토위니 바이어·셀러 앱 개발, 실제 학원 결제 키오스크 경험." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="박태규 | Android Developer" />
+    <meta property="og:description" content="상용 Android 앱 운영부터 실물 결제 단말 연동까지. 박태규의 경력과 프로젝트." />
+    <meta property="og:url" content="https://tapark.github.io/resume/" />
+    <title>박태규 | Android Developer</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./resume-copy.js" defer></script>
+    <script src="./photo-viewer.js" defer></script>
+    <script src="./contact-dialog.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">본문으로 이동</a>
+    <header class="site-header">
+      <nav class="nav shell" aria-label="주 메뉴">
+        <a class="brand" href="#top" aria-label="박태규 이력서 맨 위로 이동"><span class="brand-mark">TP</span><span>TAEGYU PARK</span></a>
+        <div class="nav-links">
+          <a href="#work">프로젝트</a>
+          <a href="#career">경력</a>
+          <a href="#skills">기술</a>
+          <button class="nav-copy" id="copy-for-llm" data-copy-resume type="button" aria-label="이력서를 LLM용 Markdown으로 복사" title="이력서 전체를 Markdown으로 복사">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></svg>
+            <span class="copy-label-desktop">Copy for LLM</span><span class="copy-label-mobile">LLM 복사</span>
+          </button>
+          <button class="nav-contact" data-contact-open type="button" aria-haspopup="dialog" aria-controls="contact-dialog">연락하기</button>
+        </div>
+        <span class="sr-only" id="copy-feedback" role="status" aria-live="polite"></span>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero shell" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> Android Developer · 2021.09—현재</div>
+          <h1 id="hero-title">사용자에게 자연스러운<br /><em>Android 경험을 만듭니다.</em></h1>
+          <p class="hero-lead">Android 앱을 만들고 운영하며 개발팀을 이끌어 온 박태규입니다. 100만 다운로드 앱의 개발부터 학원에서 쓰이는 카드 결제 키오스크 개발까지, 사용자 경험을 고려하여 설계하고 안정적으로 운영해 왔습니다.</p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#work">프로젝트 살펴보기 <span aria-hidden="true">→</span></a>
+            <div class="hero-secondary-actions">
+              <button class="button button-text" data-contact-open type="button" aria-haspopup="dialog" aria-controls="contact-dialog">연락하기 <span aria-hidden="true">↗</span></button>
+              <button class="button button-outline hero-copy-button" data-copy-resume type="button" aria-label="이력서를 LLM용 Markdown으로 복사" title="이력서 전체를 Markdown으로 복사">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></svg>
+                <span class="copy-label-desktop">Copy for LLM</span><span class="copy-label-mobile">LLM 복사</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="hero-aside" aria-label="주요 경력 요약">
+          <div class="aside-topline"><span>한눈에 보는 경험</span></div>
+          <div class="aside-item"><strong>100만 다운로드</strong><span>돈이돼지 Android 앱<br /><small>Google Play 기준 · Android 단독 개발</small></span></div>
+          <div class="aside-item"><strong>현장결제 개발</strong><span>학원 키오스크 결제 프로그램 개발<br /><small>KICC 리더기·프린터 직접 연동</small></span></div>
+          <div class="aside-item"><strong>현장 경험</strong><span>다솔정보통신 포스·키오스크·테이블 오더<br /><small>설치·유지보수와 사용자 교육</small></span></div>
+          <p class="aside-note">다양한 기기와 사용자 흐름을 고려하며, 구현 이후의 운영까지 맡아 왔습니다.</p>
+        </div>
+      </section>
+
+      <section class="intro-band" aria-label="개발 관점">
+        <div class="shell intro-band-inner">
+          <span class="section-kicker">일하는 방식</span>
+          <p>기능이 완성되는 순간보다 <strong>사용자에게 안정적으로 이어지는 순간</strong>을 더 중요하게 생각합니다.</p>
+        </div>
+      </section>
+
+      <section class="section shell" id="work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <div><span class="section-kicker">주요 프로젝트</span><h2 id="work-title">만들고 운영한 제품</h2></div>
+          <p>제품 규모, 현장 기기, 운영 환경이 서로 다른 프로젝트에서 Android 개발을 맡았습니다.</p>
+        </div>
+
+        <article class="project project-featured" aria-labelledby="money-title">
+          <div class="project-main">
+            <div class="project-meta"><span class="project-number">01</span><span>비트바이트 · 2025.02—현재</span></div>
+            <div class="project-title-row"><img class="app-icon" src="./assets/moneypig.png" width="62" height="62" alt="돈이돼지 앱 아이콘" /><h3 id="money-title">돈이돼지 <span>Android 앱</span></h3></div>
+            <p class="project-summary">Google Play 기준 Android 누적 다운로드 100만을 기록한 돈이돼지 앱의 Android 개발·운영을 단독으로 담당하고, 같은 코드베이스에서 일본 서비스 ‘부타마루’를 출시했습니다. 광고와 보상 지급, 센서 기반 만보기, 보상 애니메이션부터 QA 배포와 릴리스까지 Android 제품 전반을 맡았습니다.</p>
+            <ul class="project-points">
+              <li>일일 광고 노출 횟수와 가입 시점에 따라 전면·보상형 광고 슬롯을 선택해 사전 로드했습니다. 로드·표시 실패에는 재시도와 안내를 적용하고, 보상형 광고에서는 보상 획득 콜백을 확인한 뒤에만 지급 흐름을 진행했습니다.</li>
+              <li>보상 중복 요청과 뒤늦게 도착한 조회 응답으로 상태가 어긋나지 않도록 요청 진행 상태·세대 번호·지급 완료 ID를 관리했습니다. 지급 응답 유실 가능성이 있는 오류에는 보상 상태를 다시 조회하도록 처리했습니다.</li>
+              <li>걸음 수 센서를 포그라운드 서비스에서 처리하고 StateFlow로 화면에 전달했습니다. 재부팅으로 센서 누적값이 초기화되거나 날짜가 바뀔 때 기준값과 보정값을 갱신해 당일 걸음 수를 이어갑니다.</li>
+              <li>한국·일본의 화면·API·알림 흐름을 지역별로 구성하고, Canvas 기반 커스텀 View로 보상 애니메이션을 구현했습니다.</li>
+              <li>한국·독일·미국·일본의 오퍼월·기프트카드 제공사와 협업해 리워드 적립·교환 기능을 개발하고, 매출의 30% 이상을 차지하는 매출처를 확보했습니다.</li>
+              <li>여러 매출처의 데이터를 모아 종합 리포트 생성을 자동화했습니다. 이 리포트를 팀의 핵심 지표로 활용해 기획 정책의 방향을 결정하고 리워드 지급량을 조절하고 있습니다.</li>
+              <li>리워드 앱의 보상 확률을 설계·운영해 한정된 리워드 환경에서도 사용자 친화적인 보상 경험을 제공했습니다.</li>
+              <li>앱 위협과 어뷰저의 이상 행위를 탐지·분석하고, 중복 회원가입 방지 및 부정 사용자 탐지 로직을 설계·적용했습니다.</li>
+            </ul>
+            <div class="tags" aria-label="사용 기술"><span>Kotlin</span><span>Coroutines &amp; StateFlow</span><span>Foreground Service</span><span>Hilt</span><span>Retrofit</span></div>
+            <a class="inline-link" href="https://play.google.com/store/apps/details?id=kr.bitbyte.moneypig" target="_blank" rel="noopener noreferrer">Google Play에서 보기 <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="project-visual visual-money" aria-label="돈이돼지 Android 개발·운영 범위">
+            <div class="visual-label">제품 개발·운영 범위</div>
+            <ul class="scope-list">
+              <li><small>광고·리워드</small><strong>사전 로드·실패 복구·보상 콜백</strong></li>
+              <li><small>보상 정합성</small><strong>중복 요청·응답 역전 대응</strong></li>
+              <li><small>만보기</small><strong>재부팅·일자 변경 시 걸음 수 보정</strong></li>
+              <li><small>사용자 경험</small><strong>Canvas 기반 보상 애니메이션</strong></li>
+            </ul>
+          </div>
+        </article>
+
+        <div class="project-grid">
+          <article class="project project-compact" aria-labelledby="kiosk-title">
+            <div class="project-meta"><span class="project-number">02</span><span>개인 프로젝트 · 2024—현재 운영</span></div>
+            <h3 id="kiosk-title">Academy-Kiosk</h3>
+            <p class="project-summary">아발론교육 강북캠퍼스 (이레힐학원)에서 실제 사용하는 Android 카드 결제 키오스크를 설계·개발해 배포했습니다.</p>
+            <ul class="project-points">
+              <li><strong>연동:</strong> KICC 개발 부서와 협업해 결제·출력을 EASYCARD-AK 앱과 연동했습니다. 연동 앱을 실행할 수 없으면 설치 상태를 확인하도록 오류를 표시합니다.</li>
+              <li><strong>결제:</strong> KICC가 승인·취소 거절 코드를 반환하면 결과 코드와 메시지를 보여주고, 성공 코드(0000)를 받은 거래만 수강료 상태와 승인 내역에 반영합니다.</li>
+              <li><strong>출력:</strong> 프린터 포트별 시험 출력으로 현장 설정을 점검하고, 출력에 문제가 생기면 저장된 승인 내역에서 영수증을 다시 출력할 수 있게 했습니다.</li>
+            </ul>
+            <div class="mini-flow" aria-label="키오스크 연동 구성"><span>Android 키오스크</span><b aria-hidden="true">→</b><span>KICC 리더기</span><b aria-hidden="true">→</b><span>프린터</span></div>
+            <figure class="project-photo">
+              <button class="project-photo-trigger" id="kiosk-photo-open" type="button" aria-haspopup="dialog" aria-controls="kiosk-photo-dialog" aria-label="Academy-Kiosk 운영 현장 사진 크게 보기">
+                <img src="./assets/academy-kiosk.jpg" width="2400" height="1800" alt="아발론교육 강북캠퍼스 접수대에 설치된 Academy-Kiosk 결제 단말" loading="lazy" />
+                <span class="project-photo-action" aria-hidden="true">사진 크게 보기 ↗</span>
+              </button>
+              <figcaption>아발론교육 강북캠퍼스 (이레힐학원) · 실제 운영 현장</figcaption>
+            </figure>
+            <div class="tags"><span>Kotlin</span><span>Android SDK</span><span>결제 단말 연동</span></div>
+          </article>
+
+          <article class="project project-compact" aria-labelledby="autowini-title">
+            <div class="project-meta"><span class="project-number">03</span><span>오토위니 · 2021.09—2023.09</span></div>
+            <h3 id="autowini-title">Autowini <span>Buyer · Pro</span></h3>
+            <p class="project-summary">해외 바이어용 앱과 국내 셀러용 앱의 Android 기능을 개발했습니다.</p>
+            <ul class="project-points">
+              <li>바이어 앱의 WebView 화면을 Android 네이티브 화면으로 전환했습니다.</li>
+              <li>셀러 앱의 CameraX 기반 차량 사진·영상 촬영·편집과 AWS S3 업로드를 구현했습니다.</li>
+            </ul>
+            <div class="app-showcase" aria-label="오토위니 앱 링크">
+              <a href="https://play.google.com/store/apps/details?id=com.autowini.buyer" target="_blank" rel="noopener noreferrer"><img src="./assets/buyer.png" width="44" height="44" alt="" loading="lazy" /><span><strong>Autowini</strong><small>Buyer 앱 · Google Play</small></span><span aria-hidden="true">↗</span></a>
+              <a href="https://play.google.com/store/apps/details?id=com.autowini.seller.camera.android" target="_blank" rel="noopener noreferrer"><img src="./assets/seller.png" width="44" height="44" alt="" loading="lazy" /><span><strong>Autowini Pro</strong><small>Seller 앱 · Google Play</small></span><span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="tags"><span>Kotlin</span><span>Jetpack Compose</span><span>CameraX</span><span>AWS S3</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section career-section" id="career" aria-labelledby="career-title">
+        <div class="shell">
+          <div class="section-heading"><div><span class="section-kicker">일해온 곳</span><h2 id="career-title">경력</h2></div><p>Android 제품 개발과 개발팀 리드, 결제 장비 운영까지 경험했습니다.</p></div>
+          <div class="timeline">
+            <article class="timeline-row">
+              <div class="timeline-date">2023.09—현재</div>
+              <div>
+                <h3>비트바이트 <span>개발팀 리드 · Tech Lead</span></h3>
+                <p>개발팀 리드로서 제품 요구사항과 운영 이슈를 개발 과제로 구체화하고, 우선순위와 릴리스 일정을 조율했습니다. 돈이돼지 Android 앱의 개발·운영을 단독으로 담당하며 플레이키보드 Android 앱도 입사 시점부터 계속 맡고 있습니다.</p>
+                <ul class="career-points">
+                  <li>플레이키보드의 InputMethodService는 입력창 전환마다 시작·종료 콜백이 반복되고 키보드 뷰가 재생성될 수 있습니다. 기존 findViewById 중심의 접근은 이전 뷰를 참조하거나 뷰 생성 전·해제 후에 접근할 위험이 있어, Data Binding으로 뷰 참조를 생성 주기에 맞춰 관리하고 코루틴으로 광고·검색 등의 비동기 처리 흐름을 정리했습니다.</li>
+                  <li>실시간 번역·UI 설정·타이핑 리워드 기능을 개발하고, 구조 개선과 Crashlytics 오류 분석·수정으로 앱 안정성 지표를 기존 평균 96%에서 99.9%까지 높였습니다. 광고 지면 최적화로 매출 200% 증가에도 기여했습니다.</li>
+                </ul>
+                <div class="career-apps">
+                  <a class="career-app" href="https://play.google.com/store/apps/details?id=kr.bitbyte.moneypig" target="_blank" rel="noopener noreferrer"><img src="./assets/moneypig.png" width="34" height="34" alt="" loading="lazy" /><span>돈이돼지 앱 보기</span><span aria-hidden="true">↗</span></a>
+                  <a class="career-app" href="https://play.google.com/store/apps/details?id=kr.bitbyte.playkeyboard" target="_blank" rel="noopener noreferrer"><img src="./assets/playkeyboard.png" width="34" height="34" alt="" loading="lazy" /><span>플레이키보드 앱 보기</span><span aria-hidden="true">↗</span></a>
+                </div>
+              </div>
+            </article>
+            <article class="timeline-row"><div class="timeline-date">2021.09—2023.09</div><div><h3>오토위니 <span>주임 · Android Developer</span></h3><p>해외 바이어용 Autowini 앱과 국내 셀러용 Autowini Pro 앱을 개발했습니다. 바이어 앱의 WebView 화면을 네이티브로 전환하고, 셀러 앱의 CameraX 촬영·편집과 AWS S3 업로드 기능을 구현했습니다.</p></div></article>
+            <article class="timeline-row"><div class="timeline-date">2018.12—2020.09</div><div><h3>다솔정보통신 <span>기술지원팀장</span></h3><p>POS·키오스크·결제 장비 설치와 유지보수, 현장 사용자 교육을 담당했습니다. 실제 매장에서 장비가 사용되는 방식과 반복되는 문제를 직접 경험하고 해결했습니다.</p></div></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section shell skills-section" id="skills" aria-labelledby="skills-title">
+        <div class="section-heading"><div><span class="section-kicker">기술과 배경</span><h2 id="skills-title">기술 및 학력</h2></div></div>
+        <div class="skills-grid">
+          <div class="skill-group"><h3>Android</h3><p>Kotlin · Java · Android SDK · Jetpack Compose · MVVM · Coroutines &amp; Flow · Room · Hilt · Dagger2 · Retrofit · CameraX · ExoPlayer</p></div>
+          <div class="skill-group"><h3>운영과 협업</h3><p>Git · Firebase · Slack · Notion · Figma · Jira · Jenkins · Sentry · Confluence · Mixpanel · Braze · Airbridge</p></div>
+          <div class="skill-group"><h3>학력과 교육</h3><p>고려대학교 환경시스템공학과 학사 ·<br />42 Seoul 개발자 교육 과정 · 정보처리기사</p></div>
+        </div>
+      </section>
+
+      <section class="section shell utility-section" id="utilities" aria-labelledby="utilities-title">
+        <div class="section-heading">
+          <div><span class="section-kicker">개인 개발</span><h2 id="utilities-title">직접 만든 앱</h2></div>
+          <p>일상에 편의를 더하는 다양한 유틸리티 앱을 개발하는 것을 좋아합니다.</p>
+        </div>
+        <div class="utility-app-grid">
+          <a class="utility-app" href="https://play.google.com/store/apps/details?id=com.teddy_park.today_lottery" target="_blank" rel="noopener noreferrer"><img src="./assets/utility/today-lottery.webp" width="56" height="56" alt="" loading="lazy" /><span>오늘의 로또</span><span aria-hidden="true">↗</span></a>
+          <a class="utility-app" href="https://play.google.com/store/apps/details?id=com.project_100.wellness_vibrator" target="_blank" rel="noopener noreferrer"><img src="./assets/utility/nano-vibe.webp" width="56" height="56" alt="" loading="lazy" /><span>Nano Vibe</span><span aria-hidden="true">↗</span></a>
+          <a class="utility-app" href="https://play.google.com/store/apps/details?id=com.project_100.kakao_analytics" target="_blank" rel="noopener noreferrer"><img src="./assets/utility/canaria.webp" width="56" height="56" alt="" loading="lazy" /><span>카나리아</span><span aria-hidden="true">↗</span></a>
+          <a class="utility-app" href="https://play.google.com/store/apps/details?id=com.project_100.teto_agen" target="_blank" rel="noopener noreferrer"><img src="./assets/utility/teto.webp" width="56" height="56" alt="" loading="lazy" /><span>테토녀</span><span aria-hidden="true">↗</span></a>
+          <a class="utility-app" href="https://play.google.com/store/apps/details?id=com.project_100.reaction_speed" target="_blank" rel="noopener noreferrer"><img src="./assets/utility/tap-speed.webp" width="56" height="56" alt="" loading="lazy" /><span>탭스피드</span><span aria-hidden="true">↗</span></a>
+          <a class="utility-app" href="https://play.google.com/store/apps/details?id=com.project_100.haptic_lab" target="_blank" rel="noopener noreferrer"><img src="./assets/utility/haptic-lab.webp" width="56" height="56" alt="" loading="lazy" /><span>햅틱 실험실</span><span aria-hidden="true">↗</span></a>
+          <a class="utility-app" href="https://play.google.com/store/apps/details?id=com.tapark.easy_image_editor" target="_blank" rel="noopener noreferrer"><img src="./assets/utility/photo-board.webp" width="56" height="56" alt="" loading="lazy" /><span>사진판</span><span aria-hidden="true">↗</span></a>
+          <a class="utility-app" href="https://play.google.com/store/apps/details?id=com.teddypark.dice_for_board_game" target="_blank" rel="noopener noreferrer"><img src="./assets/utility/simple-dice.webp" width="56" height="56" alt="" loading="lazy" /><span>심플 주사위</span><span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="shell contact-inner"><div><span class="section-kicker">다음 이야기</span><h2 id="contact-title">함께 이야기해요</h2><p>Android 제품 개발과 결제 장비 운영 경험에 대해 이야기 나누고 싶습니다.</p></div><button class="contact-cta" data-contact-open type="button" aria-haspopup="dialog" aria-controls="contact-dialog">연락하기 <span aria-hidden="true">↗</span></button></div>
+      </section>
+    </main>
+
+    <dialog class="contact-dialog" id="contact-dialog" aria-labelledby="contact-dialog-title">
+      <div class="contact-dialog-heading">
+        <div><span class="section-kicker">박태규</span><h2 id="contact-dialog-title">연락하기</h2></div>
+        <button class="contact-dialog-close" type="button" aria-label="연락처 닫기">닫기 <span aria-hidden="true">×</span></button>
+      </div>
+      <div class="contact-gallery" aria-label="박태규 사진" tabindex="0">
+        <div class="contact-photo"><img src="./assets/contact/linkedin-profile.jpg" width="800" height="800" alt="정장을 입은 박태규" /></div>
+        <div class="contact-photo contact-photo--busan"><img src="./assets/contact/busan.jpg" width="506" height="900" alt="부산 바다 앞에서 찍은 박태규" /></div>
+        <div class="contact-photo contact-photo--coast"><img src="./assets/contact/coast.jpg" width="675" height="900" alt="바닷가에서 쉬고 있는 박태규" /></div>
+        <div class="contact-photo contact-photo--camp"><img src="./assets/contact/camp.jpg" width="675" height="900" alt="캠핑 중인 박태규" /></div>
+        <div class="contact-photo contact-photo--football"><img src="./assets/contact/football.jpg" width="900" height="799" alt="풋살 경기 모습" /></div>
+        <div class="contact-photo"><img src="./assets/contact/wanted-profile.jpg" width="247" height="247" alt="산에서 찍은 박태규" /></div>
+      </div>
+      <div class="contact-methods">
+        <a class="contact-phone" href="tel:01049253465"><span>휴대폰</span><strong>010-4925-3465</strong><span aria-hidden="true">↗</span></a>
+        <a class="contact-mail" href="mailto:teddy91@kakao.com"><span>이메일</span><strong>teddy91@kakao.com</strong><span aria-hidden="true">↗</span></a>
+      </div>
+    </dialog>
+
+    <dialog class="photo-dialog" id="kiosk-photo-dialog" aria-label="Academy-Kiosk 운영 현장 사진">
+      <div class="photo-dialog-header">
+        <p>아발론교육 강북캠퍼스 (이레힐학원) · Academy-Kiosk</p>
+        <button class="photo-dialog-close" type="button" aria-label="사진 닫기">닫기 <span aria-hidden="true">×</span></button>
+      </div>
+      <img src="./assets/academy-kiosk.jpg" width="2400" height="1800" alt="아발론교육 강북캠퍼스 접수대에서 운영 중인 Academy-Kiosk 결제 단말" />
+    </dialog>
+
+    <footer class="site-footer"><div class="shell footer-inner"><span>© 2026 박태규</span><div><a href="#top">맨 위로 ↑</a></div></div></footer>
+  </body>
+</html>
