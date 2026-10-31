@@ -92,20 +92,25 @@
             <div class="tags" aria-label="사용 기술"><span>Kotlin</span><span>Coroutines &amp; StateFlow</span><span>Foreground Service</span><span>Hilt</span><span>Retrofit</span></div>
             <a class="inline-link" href="https://play.google.com/store/apps/details?id=kr.bitbyte.moneypig" target="_blank" rel="noopener noreferrer">Google Play에서 보기 <span aria-hidden="true">↗</span></a>
           </div>
-          <div class="project-visual visual-money" aria-label="돈이돼지 Android 개발·운영 범위">
-            <div class="visual-label">제품 개발·운영 범위</div>
-            <ul class="scope-list">
-              <li><small>광고·리워드</small><strong>사전 로드·실패 복구·보상 콜백</strong></li>
-              <li><small>보상 정합성</small><strong>중복 요청·응답 역전 대응</strong></li>
-              <li><small>만보기</small><strong>재부팅·일자 변경 시 걸음 수 보정</strong></li>
-              <li><small>사용자 경험</small><strong>Canvas 기반 보상 애니메이션</strong></li>
+        </article>
+
+        <article class="project project-featured project-keyboard" aria-labelledby="keyboard-title">
+          <div class="project-main">
+            <div class="project-meta"><span class="project-number">02</span><span>비트바이트 · 2023.09—현재</span></div>
+            <div class="project-title-row"><img class="app-icon" src="./assets/playkeyboard.png" width="62" height="62" alt="플레이키보드 앱 아이콘" /><h3 id="keyboard-title">플레이키보드 <span>Android 앱</span></h3></div>
+            <p class="project-summary">키보드 서비스의 생명주기에 맞춰 UI 참조와 비동기 작업을 정리하고, 사용자 기능과 광고 지면을 개선했습니다.</p>
+            <ul class="project-points">
+              <li>플레이키보드의 InputMethodService는 입력창 전환마다 시작·종료 콜백이 반복되고 키보드 뷰가 재생성될 수 있습니다. 기존 findViewById 중심의 접근은 이전 뷰를 참조하거나 뷰 생성 전·해제 후에 접근할 위험이 있어, Data Binding으로 뷰 참조를 생성 주기에 맞춰 관리하고 코루틴으로 광고·검색 등의 비동기 처리 흐름을 정리했습니다.</li>
+              <li>실시간 번역·UI 설정·타이핑 리워드 기능을 개발하고, 구조 개선과 Crashlytics 오류 분석·수정으로 앱 안정성 지표를 기존 평균 96%에서 99.9%까지 높였습니다. 광고 지면 최적화로 매출 200% 증가에도 기여했습니다.</li>
             </ul>
+            <div class="tags" aria-label="사용 기술"><span>Kotlin</span><span>Data Binding</span><span>Coroutines</span><span>Firebase Crashlytics</span></div>
+            <a class="inline-link" href="https://play.google.com/store/apps/details?id=kr.bitbyte.playkeyboard" target="_blank" rel="noopener noreferrer">Google Play에서 보기 <span aria-hidden="true">↗</span></a>
           </div>
         </article>
 
         <div class="project-grid">
           <article class="project project-compact" aria-labelledby="kiosk-title">
-            <div class="project-meta"><span class="project-number">02</span><span>개인 프로젝트 · 2024—현재 운영</span></div>
+            <div class="project-meta"><span class="project-number">03</span><span>개인 프로젝트 · 2024—현재 운영</span></div>
             <h3 id="kiosk-title">Academy-Kiosk</h3>
             <p class="project-summary">아발론교육 강북캠퍼스 (이레힐학원)에서 실제 사용하는 Android 카드 결제 키오스크를 설계·개발해 배포했습니다.</p>
             <ul class="project-points">
@@ -125,7 +130,7 @@
           </article>
 
           <article class="project project-compact" aria-labelledby="autowini-title">
-            <div class="project-meta"><span class="project-number">03</span><span>오토위니 · 2021.09—2023.09</span></div>
+            <div class="project-meta"><span class="project-number">04</span><span>오토위니 · 2021.09—2023.09</span></div>
             <h3 id="autowini-title">Autowini <span>Buyer · Pro</span></h3>
             <p class="project-summary">해외 바이어용 앱과 국내 셀러용 앱의 Android 기능을 개발했습니다.</p>
             <ul class="project-points">
@@ -150,10 +155,6 @@
               <div>
                 <h3>비트바이트 <span>개발팀 리드 · Tech Lead</span></h3>
                 <p>개발팀 리드로서 제품 요구사항과 운영 이슈를 개발 과제로 구체화하고, 우선순위와 릴리스 일정을 조율했습니다. 돈이돼지 Android 앱의 개발·운영을 단독으로 담당하며 플레이키보드 Android 앱도 입사 시점부터 계속 맡고 있습니다.</p>
-                <ul class="career-points">
-                  <li>플레이키보드의 InputMethodService는 입력창 전환마다 시작·종료 콜백이 반복되고 키보드 뷰가 재생성될 수 있습니다. 기존 findViewById 중심의 접근은 이전 뷰를 참조하거나 뷰 생성 전·해제 후에 접근할 위험이 있어, Data Binding으로 뷰 참조를 생성 주기에 맞춰 관리하고 코루틴으로 광고·검색 등의 비동기 처리 흐름을 정리했습니다.</li>
-                  <li>실시간 번역·UI 설정·타이핑 리워드 기능을 개발하고, 구조 개선과 Crashlytics 오류 분석·수정으로 앱 안정성 지표를 기존 평균 96%에서 99.9%까지 높였습니다. 광고 지면 최적화로 매출 200% 증가에도 기여했습니다.</li>
-                </ul>
                 <div class="career-apps">
                   <a class="career-app" href="https://play.google.com/store/apps/details?id=kr.bitbyte.moneypig" target="_blank" rel="noopener noreferrer"><img src="./assets/moneypig.png" width="34" height="34" alt="" loading="lazy" /><span>돈이돼지 앱 보기</span><span aria-hidden="true">↗</span></a>
                   <a class="career-app" href="https://play.google.com/store/apps/details?id=kr.bitbyte.playkeyboard" target="_blank" rel="noopener noreferrer"><img src="./assets/playkeyboard.png" width="34" height="34" alt="" loading="lazy" /><span>플레이키보드 앱 보기</span><span aria-hidden="true">↗</span></a>
