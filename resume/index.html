@@ -11,7 +11,7 @@
     <meta property="og:url" content="https://tapark.github.io/resume/" />
     <title>박태규 | Android Developer</title>
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="./styles.css?v=e764ef3" />
+    <link rel="stylesheet" href="./styles.css?v=20261031-2" />
     <script src="./resume-copy.js" defer></script>
     <script src="./photo-viewer.js" defer></script>
     <script src="./contact-dialog.js" defer></script>
@@ -74,7 +74,7 @@
           <p>제품 규모, 현장 기기, 운영 환경이 서로 다른 프로젝트에서 Android 개발을 맡았습니다.</p>
         </div>
 
-        <article class="project project-featured" aria-labelledby="money-title">
+        <article class="project project-featured project-money" aria-labelledby="money-title">
           <div class="project-main">
             <div class="project-meta"><span class="project-number">01</span><span>비트바이트 · 2025.02—현재</span></div>
             <div class="project-title-row"><img class="app-icon" src="./assets/moneypig.png" width="62" height="62" alt="돈이돼지 앱 아이콘" /><h3 id="money-title">돈이돼지 <span>Android 앱</span></h3></div>
@@ -90,11 +90,13 @@
               <li>앱 위협과 어뷰저의 이상 행위를 탐지·분석하고, 중복 회원가입 방지 및 부정 사용자 탐지 로직을 설계·적용했습니다.</li>
             </ul>
             <div class="tags" aria-label="사용 기술"><span>Kotlin</span><span>Coroutines &amp; StateFlow</span><span>Foreground Service</span><span>Hilt</span><span>Retrofit</span></div>
-            <a class="inline-link" href="https://play.google.com/store/apps/details?id=kr.bitbyte.moneypig" target="_blank" rel="noopener noreferrer">Google Play에서 보기 <span aria-hidden="true">↗</span></a>
+            <div class="app-showcase project-store-link" aria-label="돈이돼지 앱 링크">
+              <a href="https://play.google.com/store/apps/details?id=kr.bitbyte.moneypig" target="_blank" rel="noopener noreferrer"><img src="./assets/moneypig.png" width="44" height="44" alt="" loading="lazy" /><span><strong>돈이돼지</strong><small>Android 앱 · Google Play</small></span><span aria-hidden="true">↗</span></a>
+            </div>
           </div>
         </article>
 
-        <article class="project project-featured project-keyboard" aria-labelledby="keyboard-title">
+        <article class="project project-featured" aria-labelledby="keyboard-title">
           <div class="project-main">
             <div class="project-meta"><span class="project-number">02</span><span>비트바이트 · 2023.09—현재</span></div>
             <div class="project-title-row"><img class="app-icon" src="./assets/playkeyboard.png" width="62" height="62" alt="플레이키보드 앱 아이콘" /><h3 id="keyboard-title">플레이키보드 <span>Android 앱</span></h3></div>
@@ -104,7 +106,9 @@
               <li>실시간 번역·UI 설정·타이핑 리워드 기능을 개발하고, 구조 개선과 Crashlytics 오류 분석·수정으로 앱 안정성 지표를 기존 평균 96%에서 99.9%까지 높였습니다. 광고 지면 최적화로 매출 200% 증가에도 기여했습니다.</li>
             </ul>
             <div class="tags" aria-label="사용 기술"><span>Kotlin</span><span>Data Binding</span><span>Coroutines</span><span>Firebase Crashlytics</span></div>
-            <a class="inline-link" href="https://play.google.com/store/apps/details?id=kr.bitbyte.playkeyboard" target="_blank" rel="noopener noreferrer">Google Play에서 보기 <span aria-hidden="true">↗</span></a>
+            <div class="app-showcase project-store-link" aria-label="플레이키보드 앱 링크">
+              <a href="https://play.google.com/store/apps/details?id=kr.bitbyte.playkeyboard" target="_blank" rel="noopener noreferrer"><img src="./assets/playkeyboard.png" width="44" height="44" alt="" loading="lazy" /><span><strong>플레이키보드</strong><small>Android 앱 · Google Play</small></span><span aria-hidden="true">↗</span></a>
+            </div>
           </div>
         </article>
 
@@ -155,10 +159,6 @@
               <div>
                 <h3>비트바이트 <span>개발팀 리드 · Tech Lead</span></h3>
                 <p>개발팀 리드로서 제품 요구사항과 운영 이슈를 개발 과제로 구체화하고, 우선순위와 릴리스 일정을 조율했습니다. 돈이돼지 Android 앱의 개발·운영을 단독으로 담당하며 플레이키보드 Android 앱도 입사 시점부터 계속 맡고 있습니다.</p>
-                <div class="career-apps">
-                  <a class="career-app" href="https://play.google.com/store/apps/details?id=kr.bitbyte.moneypig" target="_blank" rel="noopener noreferrer"><img src="./assets/moneypig.png" width="34" height="34" alt="" loading="lazy" /><span>돈이돼지 앱 보기</span><span aria-hidden="true">↗</span></a>
-                  <a class="career-app" href="https://play.google.com/store/apps/details?id=kr.bitbyte.playkeyboard" target="_blank" rel="noopener noreferrer"><img src="./assets/playkeyboard.png" width="34" height="34" alt="" loading="lazy" /><span>플레이키보드 앱 보기</span><span aria-hidden="true">↗</span></a>
-                </div>
               </div>
             </article>
             <article class="timeline-row"><div class="timeline-date">2021.09—2023.09</div><div><h3>오토위니 <span>주임 · Android Developer</span></h3><p>해외 바이어용 Autowini 앱과 국내 셀러용 Autowini Pro 앱을 개발했습니다. 바이어 앱의 WebView 화면을 네이티브로 전환하고, 셀러 앱의 CameraX 촬영·편집과 AWS S3 업로드 기능을 구현했습니다.</p></div></article>
